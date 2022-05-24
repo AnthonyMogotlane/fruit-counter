@@ -1,0 +1,48 @@
+body {
+	font-family: 'Lilita One', serif;
+	font-size: 32px;
+	background-color: lightseagreen;
+}
+
+button {
+	font: inherit;
+	width: 2em;
+}
+
+.counter {
+	padding: 1rem;
+	background: greenyellow;
+	width: 3rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	border-radius: 0.25em;
+	border: 0.1em solid green;
+}
+
+.sections {
+	display: flex;
+}
+.section {
+	background-color: royalblue;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	flex: 1;
+}
+
+.oranges {
+	background-color: darkorange;
+}
+
+.pears {
+	background-color: darkviolet;
+}
+
+.challenge {
+
+	background-color: slategray;
+	color: lightgrey;
+	/* margin: 1em; */
+	padding: 1em;
+}
+
