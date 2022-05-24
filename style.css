@@ -6,7 +6,7 @@ body {
 
 button {
 	font: inherit;
-	width: 2em;
+	width: 5em;
 }
 
 .counter {
@@ -19,9 +19,7 @@ button {
 	border: 0.1em solid green;
 }
 
-.sections {
-	display: flex;
-}
+
 .section {
 	background-color: royalblue;
 	padding: 0.5em;
@@ -44,5 +42,12 @@ button {
 	color: lightgrey;
 	/* margin: 1em; */
 	padding: 1em;
+}
+
+
+@media (min-width: 768px) {
+	.sections {
+		display: flex;
+	}
 }
 
