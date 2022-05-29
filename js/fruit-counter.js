@@ -1,5 +1,5 @@
-const FruitCounter = () => {
-    let theCount = 0;
+const FruitCounter = counter => {
+    let theCount = counter ? counter : 0;
 
     //function to increment the counter
     const increase = () => {
