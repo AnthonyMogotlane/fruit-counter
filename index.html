@@ -6,10 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One">
-
 	<link rel="stylesheet" href="style.css">
-
-
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
 	<h1>Fruit basket counter</h1>
@@ -20,19 +18,19 @@
 	<div class="sections">
 		<div class="section" >
 			<h2>Apples</h2>
-			<div class="apple counter apple_counter" >0</div>
+			<div class="apple-container"></div>
 			<button class="apple-add">Add</button>
 			<button class="apple-remove">Remove</button>
 		</div>
 		<div class="section oranges" >
 			<h2>Oranges</h2>
-			<div class="counter orange_counter" >0</div>
+			<div class="orange-container"></div>
 			<button class="orange-add">Add</button>
 			<button class="orange-remove">Remove</button>
 		</div>
 		<div class="section pears" >
 			<h2>Pears</h2>
-			<div class="counter pear_counter" >0</div>
+			<div class="pear-container"></div>
 			<button class="pear-add">Add</button>
 			<button class="pear-remove">Remove</button>
 		</div>
@@ -41,5 +39,12 @@
 	<div class="challenge">
 		Exploring factory functions.
 	</div>
+	
+	<script type="text/x-handlebars-template" class="counters-content">
+		<div class="apple counter apple-counter" >{{theCounters}}</div>
+	</script>
+
+	<script src="./js/fruit-counter.js"></script>
+	<script src="./js/fruit-counter.dom.js"></script>
 </body>
 </html>
